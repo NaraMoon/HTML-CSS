@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
+}
+ 
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+header{
+  width: 100%;
+  top: 0;
+  height: 70px;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #6b8e23;
+  position: fixed;
+
+
+}
+/* headerタグ内のheadlineクラスにのみ反映される */
+header .headline{
+  font-family: 'Mv Boli',sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+
+}
+.nav-list {
+  width: 100%;
+  height: 45px;
+  top: 70px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-color: #ffffe0;
+  position: fixed;
+}
+.nav-list-item {
+  font-family: 'Mv Boli',sans-serif;
+  list-style: none;
+
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+.nav-list-item:hover {
+  color: #6b8e23;
+}
+.nav-list-item>a:hover{
+  color: #6b8e23;
+}
+ 
+/*main-visual作成*/
+.main-visual {
+  width: 100%; /* 横幅 */
+  height: 600px; /* 高さ */
+  margin-top: 115px;
+  background-image: url(img/desert.jpg);
+  background-size: cover; /*縦横比を無視*/
+  background-position: bottom center;
+  overflow: auto;
+
+}
+
+.main-visual-content{
+  width: 40%; /* 横幅を指定 */
+  height: 600px; /* 親の高さに揃える */
+  background-color: rgba(0, 0, 0, 0.5);/*半透明黒*/
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+  
+.main-visual-text{
+  font-family: 'Mv Boli',sans-serif;
+  color: #ffffe0;
+}
+.main-visual-name{
+  font-family: 'Mv Boli',sans-serif;
+  color: #ffffe0;
+} 
+
+
+/*main作成*/
+main {
+  width: 90%; /* 横幅 */
+  margin: 0 auto;
+  background-color: #ffffe0;
+}
+
+.blog {
+  width: 70%;
+  height: 1400px;
+  float: left; /* 要素を左揃えで並べる */
+}
+.blog-headline{
+  height: 45px;
+  font-family: 'Mv Boli',sans-serif;
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 30px;
+}
+.blog-item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)),
+  url(img/desert.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  justify-content: space-around;
+}
+.blog-image{
+  height: 180px;
+  float: left;
+
+}
+.blog-text-headline{
+  padding-bottom: 15px;
+}
+.blog-text{
+  float: left;
+  padding: 30px 0 0 25px;
+}
+.blog-date{
+  display: inline-block;
+  font-size: 12px;
+}
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+
+
+.pagination{
+  text-align: center;
+  margin-top: 50px;
+  
+}
+.pagination p{
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 3px;
+  margin: 0 5px;
+  line-height: 30px;
+
+}
+
+.sidebar {
+  width: 240px;
+  float: left; /* 要素を左揃えで並べる */
+
+}
+
+.sidebar-in{
+  margin: 20px 0 0 20px;
+
+}
+
+.text-blue{
+  color: skyblue;
+}
+.text-big{
+  font-size: 30px;
+  font-family: 'Mv Boli',sans-serif;
+}
+
+.sidebar-headline, .instagram-headline, .categories-headline {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+.sidebar-contents {
+  padding: 50px 0;
+  }
+.popular-text, .categories-text {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+  }
+.popular-text:last-child, .categories-text:last-child{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.instagram{
+}
+.sidebar-contents clearfix{
+  display: inline-block;
+}
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+}
+.instagram-box:nth-child(odd) {
+  margin: 0 10px 10px 0;
+}
+.instagram-box:nth-child(1) {
+  background-image: url(img/desert.jpg);
+}
+.instagram-box:nth-child(2) {
+  background-image: url(img/desert.jpg);
+}
+.instagram-box:nth-child(3) {
+  background-image: url(img/desert.jpg);
+}
+.instagram-box:nth-child(4) {
+  background-image: url(img/desert.jpg);
+}
+.instagram-box:nth-child(5) {
+  background-image: url(img/desert.jpg);
+}
+.instagram-box:nth-child(6) {
+  background-image: url(img/desert.jpg);
+}
+ 
+
+footer {
+  width: 100%;
+  height: 120px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: #848282;
+}
+.footer-text {
+  color: #fff;
+}
+
